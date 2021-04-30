@@ -39,13 +39,17 @@ def part1():
                     if word_without_ed in dictionary:
                         pass
                     else:
-                        """ if word[-3:] == 'ied':
+                        if word[-3:] == 'ied':
                             word_without_ied = word[:-3]
                             word_without_ied_y = word_without_ied + 'y'
                             if word_without_ied_y in dictionary:
                                 pass
-                            else: """
-                        new_list.append(word)
+                            else:
+                                new_list.append(word)
+                        else: 
+                            new_list.append(word)
+                else:
+                    new_list.append(word)
 
         elif word[-1:] == 's':
             word_without_s = word[:-1]
@@ -57,13 +61,19 @@ def part1():
                     if word_without_es in dictionary:
                         pass
                     else:
-                        """ if word[-3:] == 'ies':
+                        if word[-3:] == 'ies':
                             word_without_ies = word[:-3]
                             word_without_ies_y = word_without_ies + 'y'
                             if word_without_ies_y in dictionary:
                                 pass
-                            else: """
-                        new_list.append(word)
+                            else:
+                                new_list.append(word)
+                        else:
+                            new_list.append(word)
+                else:
+                    new_list.append(word)
+        else:
+            new_list.append(word)
                     
     new_list.sort()
             
